@@ -1,0 +1,211 @@
+@font-face {
+	font-family: "Nominee";
+	font-style: normal;
+	src: url('../font/Nominee\ Regular.otf');
+}
+
+@font-face {
+	font-family: "Nominee";
+	font-style: bold;
+	src: url('../font/Nominee\ Bold.otf');
+}
+
+html {}
+body {
+    margin: 0;
+}
+
+/* animation */
+#top {
+    position: fixed;
+    z-index: 4;
+    background-color: #17243E;
+    width: 100%;
+    height: calc(100% + 200px);
+    top: -99.5px;
+    display: flex;
+    animation: doorTop 4s forwards;
+    animation-delay: 2s;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#top #auto {
+    margin: 20px auto;
+    animation: moveTop 2s forwards;
+    animation-delay: 2s;
+    opacity: 1;
+    width:150px;
+    z-index: 9;
+}
+
+.is-gold {
+    color: #dcaf13;
+}
+
+#top img {
+    width: 300px;
+}
+
+@keyframes doorTop {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(4.5px);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+@keyframes doorBottom {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-4.5px);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes moveTop {
+    0% {
+        
+    }
+    20% {
+
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes moveBottom {
+    0% {
+        
+    }
+    20% {
+        
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* autre */
+@media screen and (max-width: 600px) {
+	p {
+		font-size: 16px !important;
+	}
+}
+a {
+	text-decoration: none !important;	
+	color: #ffffff !important;
+}
+p {
+    font-family: 'Nominee';
+	font-weight: normal;
+   	color: #ffffff !important;
+    font-size: 25px;
+    margin: 0 !important;
+}
+footer, section {
+    display: block;
+    overflow: hidden;
+}
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+main img {
+    width: 300px;
+}
+@media screen and (max-width: 600px) {
+	main img {
+        width: 200px;
+    }
+}
+video {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+footer {
+    margin-bottom: 40px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer p {
+    font-size: 14px;
+}
+.footer img {
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+.margin-1 {
+    margin: 2rem 0;
+}
+.margin-b-2 {
+    margin-bottom: 2rem;
+}
+.margin-b-3 {
+    margin-bottom: 3rem;
+}
+.margin-b-3 a:hover {
+    color: #94BE4F !important;
+}
+.margin-b-4 {
+	margin-bottom: 4rem;
+}
+.margin-r-8 {
+	margin-right: 8px;
+}
+.margin-l-8 {
+	margin-left: 8px;
+}
+.color-gold {
+    color: #94BE4F !important;
+}
+/*
+* ICON RESEAUX SOCIAUX
+*/
+.reseaux-sociaux i {
+	font-style: normal !important;
+	color: #ffffff;
+    margin: 10px;
+}
+.reseaux-sociaux i:hover {
+	color: #94BE4F !important;
+}
+.fa-facebook:before {
+	font-size: 25px;
+}
+.fa-instagram:before {
+	font-size: 25px;
+}
+.fa-snapchat-ghost:before {
+    font-size: 25px;
+}
